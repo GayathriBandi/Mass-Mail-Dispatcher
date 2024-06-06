@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbfbfb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    background-size: cover;
+    position:relative;
+    color: #333333;
+    overflow-y: hidden;
+    z-index: 2;
+  }
+form {
+    max-width: 600px;
+    margin-left: 26em;
+    margin-top: 1em;
+
+    background: rgb(103, 234, 227);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(214, 73, 73, 0.1);
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    /* border-radius: 10px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: italic;
+    color: #1d1db8;
+  }
+input[type="email"],
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #252222;
+  border-radius: 5px;
+  font-size: 16px ;
+  color: #41118e;
+  background: rgba(247, 244, 244, 0.1);
+}
+ #subject{
+    width: 89%;
+    padding: 10px;
+    margin-bottom:-1em;
+    border: 1px solid #010101;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #1c0a83;
+    z-index: 22;
+    position: absolute;
+    
+    background: rgb(255,255,255);
+  }
+  #message{
+    background: rgb(255, 255, 255);
+  }
+  #senderEmail{
+    background: rgb(255, 255, 255);
+  }
+input[type="file"] {
+    margin-bottom: 12px;
+    color: #02304d;
+    
+  }
+input[type="button"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #39109f;
+  
+  border: none;
+  border-radius: 5px;
+  color: #ebeff2;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+input[type="button"]:hover {
+  color: #e6e6e6;
+  background-color:#1c0359;
+  
+}
+#validEmails {
+    margin-top: 4px;
+  }
+  #invalidEmails {
+    margin-top: 4px; 
+  } 
+#validEmails p,
+#invalidEmails p {
+  font-weight: bold;
+  color: #131312;
+}
+#validEmails div {
+color: #393E41;
+}
+#invalidEmails div {
+color: #393E41;
+}
+#message{
+  color:#393E41;
+}
+#senderEmail{
+  color:#393E41;
+}
+input[type="email"]:focus,
+textarea:focus {
+  outline: none !important;
+  border-color: #393d40;
+}
+#validEmails, #invalidEmails {
+  height: 150px;
+  overflow: auto;
+}
